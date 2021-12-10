@@ -6,11 +6,11 @@ const Navbar = () => {
     return (
         <>
 
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark" style={{ background: '#198754' }}>
                 <div className="container">
-                    <Link className="navbar-brand p-0" style={{ fontSize: '1.5em' }} to="/">e<span className="text-warning">Notebook</span></Link>
+                    <Link className="navbar-brand p-0" style={{ fontSize: '1.5em' }} to="/">E~<span style={{ color: '#0dcaf0' }}>Notebook</span></Link>
 
-                    <button className="navbar-toggler" style={{ background: '#adad1a' }} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button className="navbar-toggler" style={{ background: '#0dcaf0' }} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,13 +25,13 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/notes">Notes</Link>
                             </li>
-                           
+
                             <li className="nav-item">
                                 <Link className="nav-link" to="/news">News</Link>
                             </li>
                             &nbsp; &nbsp;
                             <li className="nav-item">
-                                <span className="text-warning" style={{ fontSize: '1.5em' }}><Clock /></span>
+                                <span style={{ fontSize: '1.5em', color: '#f8fccc' }}><Clock /></span>
                             </li>
 
                         </ul>
